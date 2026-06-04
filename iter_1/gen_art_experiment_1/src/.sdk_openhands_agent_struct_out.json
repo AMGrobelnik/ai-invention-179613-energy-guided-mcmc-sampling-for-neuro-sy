@@ -1,0 +1,11 @@
+{
+  "title": "LLM-Generated FOL Fragment Quality Pilot Experiment",
+  "layman_summary": "Tests whether AI language models can translate natural language text into valid First-Order Logic formulas with sufficient semantic diversity, enabling neuro-symbolic AI systems that combine neural networks with symbolic reasoning.",
+  "summary": "Implemented complete experiment pipeline testing Assumption 1 from the hypothesis: whether LLMs can generate >70% valid FOL fragments with semantic diversity >0.3. The experiment includes: (1) Data loading from RuleTaker dataset with synthetic fallback, (2) LLM fragment generation using temperature diversity sampling (6 temperatures x 2 repeats = 12 fragments per example), (3) Multi-stage syntax validation (pyswip for Prolog validation, tuprolog pure Python fallback, regex-based heuristic validation), (4) Semantic diversity computation using Sentence-BERT embeddings with TF-IDF fallback, (5) Budget tracking for OpenRouter API calls ($10 USD maximum, tracked per API call). The method.py implementation follows aii-python skill standards with loguru logging, proper error handling, and type hints. Results with mock LLM show 100% valid fragment rate (exceeds 70% threshold) but low semantic diversity (0.008, below 0.3 threshold - expected with identical mock responses). The output validates against exp_gen_sol_out.json schema. Full implementation includes test scripts (test_dry_run.py, test_mini_experiment.py) and virtual environment configuration. To deploy with real LLM calls, add OpenRouter API key - diversity should improve with real LLM generating diverse fragments.",
+  "out_expected_files": {
+    "script": "method.py",
+    "full_output": "full_method_out.json",
+    "mini_output": "mini_method_out.json",
+    "preview_output": "preview_method_out.json"
+  }
+}

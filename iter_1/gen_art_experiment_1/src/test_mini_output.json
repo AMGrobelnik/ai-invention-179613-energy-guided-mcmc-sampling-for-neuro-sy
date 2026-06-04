@@ -1,0 +1,118 @@
+{
+  "experiment_name": "pilot_fol_fragment_validation",
+  "metrics": {
+    "total_examples": 1,
+    "total_fragments_generated": 12,
+    "total_valid_fragments": 12,
+    "overall_valid_rate": 1.0
+  },
+  "results_per_example": [
+    {
+      "example_id": 0,
+      "text": "Alice is a cat. Bob is a dog. Cats like mice. Dogs like bones. Alice likes mice.",
+      "fragments": [
+        {
+          "fragment": "loves(alice, bob).\nfriend(bob, alice).\nenemy(X, Y) :- hates(X, Y).",
+          "temperature": 0.7,
+          "fragment_num": 0,
+          "cost": 0.001,
+          "syntax_valid": true,
+          "syntax_error": null
+        },
+        {
+          "fragment": "happy(alice).\nsad(bob).\nrich(X) :- has_money(X), not poor(X).",
+          "temperature": 0.7,
+          "fragment_num": 1,
+          "cost": 0.001,
+          "syntax_valid": true,
+          "syntax_error": null
+        },
+        {
+          "fragment": "happy(alice).\nsad(bob).\nrich(X) :- has_money(X), not poor(X).",
+          "temperature": 0.8,
+          "fragment_num": 0,
+          "cost": 0.001,
+          "syntax_valid": true,
+          "syntax_error": null
+        },
+        {
+          "fragment": "likes(alice, bob).\nloves(bob, cat).\nfriend(X, Y) :- likes(X, Y), likes(Y, X).",
+          "temperature": 0.8,
+          "fragment_num": 1,
+          "cost": 0.001,
+          "syntax_valid": true,
+          "syntax_error": null
+        },
+        {
+          "fragment": "happy(alice).\nsad(bob).\nrich(X) :- has_money(X), not poor(X).",
+          "temperature": 0.9,
+          "fragment_num": 0,
+          "cost": 0.001,
+          "syntax_valid": true,
+          "syntax_error": null
+        },
+        {
+          "fragment": "happy(alice).\nsad(bob).\nrich(X) :- has_money(X), not poor(X).",
+          "temperature": 0.9,
+          "fragment_num": 1,
+          "cost": 0.001,
+          "syntax_valid": true,
+          "syntax_error": null
+        },
+        {
+          "fragment": "happy(alice).\nsad(bob).\nrich(X) :- has_money(X), not poor(X).",
+          "temperature": 1.0,
+          "fragment_num": 0,
+          "cost": 0.001,
+          "syntax_valid": true,
+          "syntax_error": null
+        },
+        {
+          "fragment": "likes(alice, bob).\nloves(bob, cat).\nfriend(X, Y) :- likes(X, Y), likes(Y, X).",
+          "temperature": 1.0,
+          "fragment_num": 1,
+          "cost": 0.001,
+          "syntax_valid": true,
+          "syntax_error": null
+        },
+        {
+          "fragment": "loves(alice, bob).\nfriend(bob, alice).\nenemy(X, Y) :- hates(X, Y).",
+          "temperature": 1.1,
+          "fragment_num": 0,
+          "cost": 0.001,
+          "syntax_valid": true,
+          "syntax_error": null
+        },
+        {
+          "fragment": "happy(alice).\nsad(bob).\nrich(X) :- has_money(X), not poor(X).",
+          "temperature": 1.1,
+          "fragment_num": 1,
+          "cost": 0.001,
+          "syntax_valid": true,
+          "syntax_error": null
+        },
+        {
+          "fragment": "happy(alice).\nsad(bob).\nrich(X) :- has_money(X), not poor(X).",
+          "temperature": 1.2,
+          "fragment_num": 0,
+          "cost": 0.001,
+          "syntax_valid": true,
+          "syntax_error": null
+        },
+        {
+          "fragment": "loves(alice, bob).\nfriend(bob, alice).\nenemy(X, Y) :- hates(X, Y).",
+          "temperature": 1.2,
+          "fragment_num": 1,
+          "cost": 0.001,
+          "syntax_valid": true,
+          "syntax_error": null
+        }
+      ],
+      "valid_fragment_count": 12,
+      "valid_fragment_rate": 1.0,
+      "semantic_diversity_mean": 0.5081892776483911,
+      "semantic_diversity_all": [],
+      "passes_diversity_threshold": true
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "experiment_name": "pilot_fol_fragment_validation",
+    "metrics": {
+      "total_examples": 5,
+      "total_fragments_generated": 60,
+      "total_valid_fragments": 60,
+      "overall_valid_rate": 1.0,
+      "diversity_scores": [
+        0.007913608103990555,
+        0.007913608103990555,
+        0.007913608103990555,
+        0.007913608103990555,
+        0.007913608103990555
+      ],
+      "passed_diversity": 0,
+      "total_cost_usd": 0.060000000000000046,
+      "fragments_per_example": [
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "mean_diversity": 0.007913608103990555,
+      "std_diversity": 0.0,
+      "examples_passing_diversity": 0
+    },
+    "failure_modes": {
+      "syntax_errors": {},
+      "empty_fragments": 0,
+      "llm_refusals": 0
+    },
+    "success_criteria": {
+      "valid_rate_threshold": 0.7,
+      "diversity_threshold": 0.3,
+      "valid_rate_achieved": true,
+      "diversity_achieved": false,
+      "both_passed": false
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "RuleTaker",
+      "examples": [
+        {
+          "input": "Alice is a cat. Bob is a dog. Cats like mice. Dogs like bones. Alice likes mice.",
+          "output": "[\"% Mock FOL response for temperature 0.7\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 0.7\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 0.8\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 0.8\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 0.9\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 0.9\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.0\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.0\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.1\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.1\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.2\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.2\\nlikes(alice, bob).\\nloves(bob, cat).\"]",
+          "metadata_valid_fragment_rate": "1.0",
+          "metadata_semantic_diversity": "0.007913608",
+          "metadata_passes_diversity": "False",
+          "predict_valid_count": "12",
+          "predict_total_count": "12"
+        },
+        {
+          "input": "Every manager oversees employees. Sarah is a manager. Tom is an employee. Sarah oversees Tom.",
+          "output": "[\"% Mock FOL response for temperature 0.7\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 0.7\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 0.8\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 0.8\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 0.9\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 0.9\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.0\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.0\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.1\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.1\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.2\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.2\\nlikes(alice, bob).\\nloves(bob, cat).\"]",
+          "metadata_valid_fragment_rate": "1.0",
+          "metadata_semantic_diversity": "0.007913608",
+          "metadata_passes_diversity": "False",
+          "predict_valid_count": "12",
+          "predict_total_count": "12"
+        },
+        {
+          "input": "If it rains, the ground gets wet. If the ground is wet, plants grow. It is raining.",
+          "output": "[\"% Mock FOL response for temperature 0.7\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 0.7\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 0.8\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 0.8\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 0.9\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 0.9\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.0\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.0\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.1\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.1\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.2\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.2\\nlikes(alice, bob).\\nloves(bob, cat).\"]",
+          "metadata_valid_fragment_rate": "1.0",
+          "metadata_semantic_diversity": "0.007913608",
+          "metadata_passes_diversity": "False",
+          "predict_valid_count": "12",
+          "predict_total_count": "12"
+        },
+        {
+          "input": "All birds can fly. Penguins are birds. Penguins cannot fly.",
+          "output": "[\"% Mock FOL response for temperature 0.7\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 0.7\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 0.8\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 0.8\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 0.9\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 0.9\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.0\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.0\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.1\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.1\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.2\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.2\\nlikes(alice, bob).\\nloves(bob, cat).\"]",
+          "metadata_valid_fragment_rate": "1.0",
+          "metadata_semantic_diversity": "0.007913608",
+          "metadata_passes_diversity": "False",
+          "predict_valid_count": "12",
+          "predict_total_count": "12"
+        },
+        {
+          "input": "John owns a car. Mary owns a bike. Cars are faster than bikes. John is faster than Mary.",
+          "output": "[\"% Mock FOL response for temperature 0.7\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 0.7\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 0.8\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 0.8\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 0.9\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 0.9\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.0\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.0\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.1\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.1\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.2\\nlikes(alice, bob).\\nloves(bob, cat).\", \"% Mock FOL response for temperature 1.2\\nlikes(alice, bob).\\nloves(bob, cat).\"]",
+          "metadata_valid_fragment_rate": "1.0",
+          "metadata_semantic_diversity": "0.007913608",
+          "metadata_passes_diversity": "False",
+          "predict_valid_count": "12",
+          "predict_total_count": "12"
+        }
+      ]
+    }
+  ]
+}
