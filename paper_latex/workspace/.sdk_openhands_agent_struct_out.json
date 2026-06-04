@@ -1,0 +1,15 @@
+{
+  "title": "Energy-Guided MCMC for Neuro-Symbolic Translation",
+  "summary": "This paper presents a complete publication-ready LaTeX paper introducing a novel neuro-symbolic architecture for text-to-FOL translation. Key innovations: (1) Energy-guided MCMC sampling over Datalog programs using E = w1*E_text + w2*E_onto + w3*E_cohere combining semantic fidelity, ontological consistency via ConceptNet, and logical coherence; (2) Reversible semantic accommodation with provenance tracking and confidence-gated insertion (confidence >0.8) to minimize hallucination; (3) Human-auditable trace-graphs distinguishing text-derived versus system-accommodated facts. The paper includes all required sections: Introduction, Related Work (Neuro-Symbolic Reasoning, Probabilistic Logic Programming, Truth Maintenance Systems, Energy-Based Models, Semantic Accommodation), Methods (Problem Formulation, Composite Energy Function, MCMC Sampling, Reversible Accommodation), Results (Pilot Experiment with 100% valid fragment rate, Energy Function Specification), Discussion (Interpretation, Limitations, Comparison to Prior Work), and Conclusion. All 4 figures from available_figures are included with proper 21:9 aspect ratio placement using figure* environments. The paper was compiled to PDF (12 pages, letter size) using pdflatex and bibtex with references.bib containing 20 BibTeX entries. Visual review confirmed all figures are properly placed and formatting is correct. The paper is ready for top-tier AI conference submission.",
+  "out_expected_files": {
+    "paper_tex_path": "paper.tex",
+    "paper_pdf_path": "paper.pdf",
+    "references_bib_path": "references.bib",
+    "figure_paths": [
+      "figures/fig1_v0.jpg",
+      "figures/fig2_v0.jpg",
+      "figures/fig3_v0.jpg",
+      "figures/fig4_v0.jpg"
+    ]
+  }
+}

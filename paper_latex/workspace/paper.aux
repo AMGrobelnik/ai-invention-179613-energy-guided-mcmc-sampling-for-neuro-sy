@@ -1,0 +1,87 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{Clark2020}
+\citation{Pan2023,Rocktaschel2017}
+\citation{Ji2023}
+\citation{LeCun2006}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\citation{Lewis1979}
+\citation{Ceri1989}
+\citation{Reimers2019,Speer2017,Ceri1989}
+\citation{Doyle1979,deKleer1986}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces End-to-end pipeline for energy-guided MCMC sampling with reversible semantic accommodation. The input text is processed by an LLM to generate a fragment pool (max 50 fragments). MCMC sampling constructs complete Datalog programs guided by the composite energy function E = w1*E\_text + w2*E\_onto + w3*E\_cohere. The best program is used for reasoning with reversible semantic accommodation, producing a provenance-tracked trace-graph.}}{2}{figure.1}\protected@file@percent }
+\newlabel{fig:fig1}{{1}{2}{End-to-end pipeline for energy-guided MCMC sampling with reversible semantic accommodation. The input text is processed by an LLM to generate a fragment pool (max 50 fragments). MCMC sampling constructs complete Datalog programs guided by the composite energy function E = w1*E\_text + w2*E\_onto + w3*E\_cohere. The best program is used for reasoning with reversible semantic accommodation, producing a provenance-tracked trace-graph}{figure.1}{}}
+\citation{Pan2023}
+\citation{Rocktaschel2017}
+\citation{DeRaedt2007}
+\citation{Doyle1979}
+\citation{LeCun2006}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{3}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Neuro-Symbolic Reasoning}{3}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Probabilistic Logic Programming}{3}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Truth Maintenance Systems}{3}{subsection.2.3}\protected@file@percent }
+\citation{Lewis1979}
+\citation{Ceri1989}
+\citation{Reimers2019}
+\citation{Reimers2019docs}
+\citation{Speer2017}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Energy-Based Models}{4}{subsection.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Semantic Accommodation}{4}{subsection.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Methods}{4}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Problem Formulation}{4}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Composite Energy Function}{4}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}E\_text: Semantic Fidelity}{4}{subsubsection.3.2.1}\protected@file@percent }
+\citation{Ceri1989}
+\citation{Hastings1970}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}E\_onto: Ontological Consistency}{5}{subsubsection.3.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3}E\_cohere: Logical Coherence}{5}{subsubsection.3.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}MCMC Sampling Algorithm}{5}{subsection.3.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Illustration of Metropolis-Hastings MCMC sampling over Datalog program space. The current program evolves through add/remove/swap proposals, with acceptance probability min(1, exp(-$\Delta $E/T)). The energy landscape shows lower energy regions corresponding to higher-quality programs.}}{6}{figure.2}\protected@file@percent }
+\newlabel{fig:fig2}{{2}{6}{Illustration of Metropolis-Hastings MCMC sampling over Datalog program space. The current program evolves through add/remove/swap proposals, with acceptance probability min(1, exp(-$\Delta $E/T)). The energy landscape shows lower energy regions corresponding to higher-quality programs}{figure.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Reversible Semantic Accommodation}{6}{subsection.3.4}\protected@file@percent }
+\citation{Clark2020b}
+\citation{Calejo2006}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces The accommodation and retraction process with provenance tracking. When a query fails, the LLM proposes high-confidence facts that pass ConceptNet validation. These are inserted with provenance=`accommodated'. If a contradiction is detected, the most recently accommodated fact is retracted (LIFO order).}}{7}{figure.3}\protected@file@percent }
+\newlabel{fig:fig3}{{3}{7}{The accommodation and retraction process with provenance tracking. When a query fails, the LLM proposes high-confidence facts that pass ConceptNet validation. These are inserted with provenance=`accommodated'. If a contradiction is detected, the most recently accommodated fact is retracted (LIFO order)}{figure.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Results}{7}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Pilot Experiment: FOL Fragment Quality Validation}{7}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}Experimental Setup}{7}{subsubsection.4.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}Results}{8}{subsubsection.4.1.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Pilot experiment results on fragment quality validation.}}{8}{table.1}\protected@file@percent }
+\newlabel{tab:results}{{1}{8}{Pilot experiment results on fragment quality validation}{table.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.3}Implementation Details}{8}{subsubsection.4.1.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Results from the FOL fragment quality pilot experiment on RuleTaker data. The multi-stage validation pipeline achieved 100\% valid fragment rate (60/60 fragments), exceeding the 70\% threshold. Semantic diversity was limited with mock LLM responses (mean pairwise cosine distance = 0.0079), indicating the need for real LLM deployment.}}{9}{figure.4}\protected@file@percent }
+\newlabel{fig:fig4}{{4}{9}{Results from the FOL fragment quality pilot experiment on RuleTaker data. The multi-stage validation pipeline achieved 100\% valid fragment rate (60/60 fragments), exceeding the 70\% threshold. Semantic diversity was limited with mock LLM responses (mean pairwise cosine distance = 0.0079), indicating the need for real LLM deployment}{figure.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Energy Function Specification}{9}{subsection.4.2}\protected@file@percent }
+\citation{DeRaedt2007}
+\citation{Pan2023}
+\citation{Doyle1979}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Discussion}{10}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Interpretation of Results}{10}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Limitations}{10}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Comparison to Prior Work}{10}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{10}{section.6}\protected@file@percent }
+\citation{Sinha2019}
+\bibstyle{plain}
+\bibdata{references}
+\bibcite{Calejo2006}{{1}{}{{}}{{}}}
+\bibcite{Ceri1989}{{2}{}{{}}{{}}}
+\bibcite{Clark2020}{{3}{}{{}}{{}}}
+\bibcite{Clark2020b}{{4}{}{{}}{{}}}
+\bibcite{deKleer1986}{{5}{}{{}}{{}}}
+\bibcite{DeRaedt2007}{{6}{}{{}}{{}}}
+\bibcite{Doyle1979}{{7}{}{{}}{{}}}
+\bibcite{Hastings1970}{{8}{}{{}}{{}}}
+\bibcite{Ji2023}{{9}{}{{}}{{}}}
+\bibcite{LeCun2006}{{10}{}{{}}{{}}}
+\bibcite{Lewis1979}{{11}{}{{}}{{}}}
+\bibcite{Pan2023}{{12}{}{{}}{{}}}
+\bibcite{Reimers2019}{{13}{}{{}}{{}}}
+\bibcite{Reimers2019docs}{{14}{}{{}}{{}}}
+\bibcite{Rocktaschel2017}{{15}{}{{}}{{}}}
+\bibcite{Sinha2019}{{16}{}{{}}{{}}}
+\bibcite{Speer2017}{{17}{}{{}}{{}}}
+\providecommand\NAT@force@numbers{}\NAT@force@numbers
+\gdef \@abspage@last{12}

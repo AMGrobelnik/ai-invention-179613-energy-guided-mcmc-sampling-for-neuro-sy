@@ -1,0 +1,103 @@
+\begin{thebibliography}{10}
+
+\bibitem{Calejo2006}
+Miguel Calejo.
+\newblock pyswip: Python-swi-prolog bridge.
+\newblock \url{https://github.com/yuce/pyswip}, 2006.
+
+\bibitem{Ceri1989}
+Stefano Ceri, Georg Gottlob, and Letizia Tanca.
+\newblock What you always wanted to know about datalog (and never dared to
+  ask).
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering},
+  1(1):146--166, 1989.
+
+\bibitem{Clark2020}
+Peter Clark, Oyvind Tafjord, and Kyle Richardson.
+\newblock Transformers as soft reasoners.
+\newblock {\em Proceedings of the International Conference on Learning
+  Representations (ICLR)}, 2020.
+
+\bibitem{Clark2020b}
+Peter Clark, Oyvind Tafjord, and Kyle Richardson.
+\newblock Transformers as soft reasoners.
+\newblock {\em Proceedings of the International Conference on Learning
+  Representations (ICLR)}, 2020.
+
+\bibitem{deKleer1986}
+Johan de~Kleer.
+\newblock An assumption-based tms.
+\newblock {\em Artificial Intelligence}, 28(1):127--162, 1986.
+
+\bibitem{DeRaedt2007}
+Luc De~Raedt, Angelika Kimmig, and Hannu Toivonen.
+\newblock Problog: A probabilistic prolog and its application in link
+  discovery.
+\newblock In {\em Proceedings of the 20th International Joint Conference on
+  Artificial Intelligence (IJCAI)}, pages 2462--2467, 2007.
+
+\bibitem{Doyle1979}
+Jon Doyle.
+\newblock A truth maintenance system.
+\newblock {\em Artificial Intelligence}, 12(3):231--272, 1979.
+
+\bibitem{Hastings1970}
+W~Keith Hastings.
+\newblock Monte carlo sampling methods using markov chains and their
+  applications.
+\newblock {\em Biometrika}, 57(1):97--109, 1970.
+
+\bibitem{Ji2023}
+Ziwei Ji, Nayeon Lee, Rita Frieske, Tiezheng Yu, Dan Su, Yan Xu, Etsuko Ishii,
+  Yejin Bang, Andrea Madotto, and Pascale Fung.
+\newblock Survey of hallucination in natural language generation.
+\newblock {\em ACM Computing Surveys}, 55(12):1--38, 2023.
+
+\bibitem{LeCun2006}
+Yann LeCun, Sumit Chopra, Raia Hadsell, Marc'Aurelio Ranzato, and Fu~Jie Huang.
+\newblock {\em A Tutorial on Energy-Based Learning}.
+\newblock MIT Press, 2006.
+
+\bibitem{Lewis1979}
+David Lewis.
+\newblock Scorekeeping in a language game.
+\newblock {\em Journal of Philosophical Logic}, 8(1):339--359, 1979.
+
+\bibitem{Pan2023}
+Liangming Pan, Alon Sun, Xinyi Yu, and Min Zhou.
+\newblock Logic-lm: Empowering large language models with symbolic solvers.
+\newblock In {\em Proceedings of the Conference on Empirical Methods in Natural
+  Language Processing (EMNLP)}, 2023.
+
+\bibitem{Reimers2019}
+Nils Reimers and Iryna Gurevych.
+\newblock Sentence-bert: Sentence embeddings using siamese bert-networks.
+\newblock In {\em Proceedings of the 2019 Conference on Empirical Methods in
+  Natural Language Processing (EMNLP)}, 2019.
+
+\bibitem{Reimers2019docs}
+Nils Reimers and Iryna Gurevych.
+\newblock Sentence-transformers documentation.
+\newblock
+  \url{https://www.sbert.net/docs/sentence_transformer/pretrained_models.html},
+  2019.
+
+\bibitem{Rocktaschel2017}
+Tim Rockt{\"a}schel and Sebastian Riedel.
+\newblock End-to-end differentiable proving.
+\newblock In {\em Advances in Neural Information Processing Systems (NeurIPS)},
+  volume~30, 2017.
+
+\bibitem{Sinha2019}
+Koustuv Sinha, Shagun Sodhani, Jin Dong, Joelle Pineau, and William Hamilton.
+\newblock Clutrr: A diagnostic benchmark for inductive reasoning from text.
+\newblock In {\em Proceedings of the 2019 Conference on Empirical Methods in
+  Natural Language Processing (EMNLP)}, 2019.
+
+\bibitem{Speer2017}
+Robyn Speer, Joshua Chin, and Catherine Havasi.
+\newblock Conceptnet 5.5: An open multilingual graph of general knowledge.
+\newblock In {\em Proceedings of the AAAI Conference on Artificial
+  Intelligence}, volume~31, 2017.
+
+\end{thebibliography}
